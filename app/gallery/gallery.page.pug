@@ -1,0 +1,45 @@
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Code Tour Gallery
+    include ../components/common-header
+    link(rel='stylesheet' href='gallery.css')
+
+  body
+    div(class='Gallery' id='app')
+      section(id='bannerSection')
+
+      div(class='Gallery__aligner')
+        div(class='Gallery__title') Code Tour Gallery
+        div(class='Gallery__subtitle').
+          A small but growing collection of Code Tours
+
+        a(
+          class='Gallery-Item'
+          href='https://view.code-tour.com/1346/10cet60h35qug/'
+        )
+          img(class='Gallery-Item__thumbnail' src='/assets/thumbnails/gallery-1.jpg')
+          div(class='Gallery-Item__box')
+            div(class='Gallery-Item__title').
+              Introducing Python List Comprehensions
+            div(class='Gallery-Item__info').
+                An introductory example of how to use list comprehensions in
+                Python
+
+        a(
+          class='Gallery-Item'
+          href='https://view.code-tour.com/1140/13vkd31l2l9zi/'
+        )
+          img(class='Gallery-Item__thumbnail' src='/assets/thumbnails/gallery-2.jpg')
+          div(class='Gallery-Item__box')
+            div(class='Gallery-Item__title').
+              Lambda Function Code
+            div(class='Gallery-Item__info').
+                Creating an AWS Lambda function in Python that is served
+                through the AWS Gateway to grant a user access based on
+                POST arguments
+      div(style='flex-grow: 1')
+      div(style='height: 200px')
+      include ../components/footer/_footer
+
+    script(src='gallery.js')

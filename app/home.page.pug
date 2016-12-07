@@ -1,0 +1,17 @@
+html
+  head
+    title Code Tour: Show &amp; Tell for Code
+    include components/common-header
+    link(rel='stylesheet' href='home/home.css')
+
+  body
+    div(id='app')
+      section(id='bannerSection')
+      include home/headline/_headline
+      include home/benefits/_benefits
+      include home/example/example
+      div(style='flex:grow')
+      include home/download/_download
+      include components/footer/_footer
+
+    script(src='home/home.js')
